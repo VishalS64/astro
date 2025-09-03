@@ -5,9 +5,9 @@ import ContentPanel from "../components/ContentPanel.astro";
 
 <BaseLayout title="Termos de Utilização — cassinoautorizadoonline.com">
 	<p class="pt-4 navlink">
-		<a href="/">Home</a> / <a href="">Terms Of Use</a>
+		<a href="/">Início</a> / <a href="">Terms Of Use</a>
 	</p>
-	<p class="heads font-bold">Terms Of Use</p>
+	<p class="heads font-bold">Termos de Uso</p>
 	<ContentPanel title="Termos de Utilização — cassinoautorizadoonline.com">
 		<div class="legal">
 			<p class="meta"><strong>Última atualização:</strong> 18/08/2025</p>
@@ -197,7 +197,7 @@ import ContentPanel from "../components/ContentPanel.astro";
 				font-weight: 400;
 				font-size: 20px;
 				line-height: 1.6;
-				text-align: justify;
+				text-align: start;
 			}
 
 			.legal h2 {
@@ -225,7 +225,7 @@ import ContentPanel from "../components/ContentPanel.astro";
 
 			.legal ul,
 			.legal ol {
-				margin: 8px 0 16px 1.35rem;
+				/* margin: 8px 0 16px 1.35rem; */
 				padding: 0;
 			}
 			.legal li {
@@ -302,11 +302,14 @@ import ContentPanel from "../components/ContentPanel.astro";
 
 	<!-- ONLY change: global page background image -->
 	<style>
-		:global(html) { min-height: 100%; }
+		:global(html) {
+			min-height: 100%;
+		}
 		:global(body) {
 			min-height: 100vh;
 			/* Place bg.png in /public */
-			background: #0a0f12 url("/bg.png") no-repeat center top / cover fixed;
+			background: #0a0f12 url("/bg.png") no-repeat center top / cover
+				fixed;
 			/* content remains fully scrollable; background stays put */
 		}
 	</style>
